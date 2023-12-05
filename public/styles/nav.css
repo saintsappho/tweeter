@@ -1,0 +1,18 @@
+nav {
+  height: 120px;
+  position: fixed;
+  width: 100% ;
+  padding: 1.5em;
+  background-color: #19005e;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  .
+  .tweet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+  
