@@ -16,18 +16,26 @@ html {
 
 body {
   color: #ffffff;
-  background-color: rgb(50, 50, 120);
+  background-color: #19005e;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
 }
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
   color: #ffffff;
-  background-color: rgb(50, 50, 120);
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+.counter{
+  font-family: Bungee;
+  font-size: medium;
+}
+.warning {
+  color: rgb(131, 0, 0);
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

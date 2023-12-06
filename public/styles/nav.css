@@ -3,16 +3,19 @@ nav {
   position: fixed;
   width: 100% ;
   padding: 1.5em;
+  border-bottom: #19005e8d;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   background-color: #19005e;
-  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
-  color: #FFF;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
   display: flex;
   justify-content: space-between;
-  .
-  .tweet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  }
-  
+}
+#tweeter-title{
+  font-family: Bungee;
+}
+.tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
