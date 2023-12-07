@@ -42,7 +42,7 @@
       </div>
     </nav>
     <!-- Page-specific (main) content here -->
-    <header>
+    <header id="page-header">
       <div>
         <img src="/images/profile-hex.png">
       </div>
@@ -53,15 +53,34 @@
     </header>
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
         <form>
           <label for="tweet-text">What are you humming about?</label>
+          <br/>
           <textarea name="text" id="tweet-text"></textarea>
-          <div>
+          <div class="input-reactions">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+      <section class="all-tweets">
+        <article class="tweet-box">
+          <header>
+            <div class="user-profile"><img src="https://i.imgur.com/nlhLi3I.png" alt="Profile Picture"><span>Robin Fleur</span></div>
+            
+            <div class="user-tag">@example</div>
+         </header>
+          <div class="tweet-content">
+            <p>
+              some thing about standing on giant dudes
+            </p>
+          </div>
+         <footer>
+            <time class="tweet-box-time">10 days ago</time>
+            <div class="reactions"> <i class="fa-solid fa-angles-down"></i> <i class="fa-solid fa-angles-down"></i> <i class="fa-solid fa-angles-down"></i></div>
+
+          </footer>
+        </article>
       </section>
     </main>
   </body>
