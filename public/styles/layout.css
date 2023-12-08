@@ -74,8 +74,21 @@ body {
   color: #252525
 }
 
+#error-printer {
+  display: none;
+  margin: 5px -40px;
+  border: 2px dashed whitesmoke;
+  padding-left: 1em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 20px;
+  background-color: rgb(126, 62, 62);
+  color: whitesmoke;
+}
+
 .all-tweets {
   width: 100%;
+  border-radius: 10px;
 }
 
 .input-reactions {
@@ -111,6 +124,11 @@ body {
   align-items: flex-start;
   padding: 5px 10px 10px;
   margin: 10px
+}
+
+.tweet-box header .user-tag:hover{
+  color: cornflowerblue;
+  text-shadow: 1px 1px #313131;
 }
 
 .tweet-box footer .reactions {

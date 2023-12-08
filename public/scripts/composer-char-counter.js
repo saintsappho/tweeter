@@ -1,9 +1,6 @@
 $(document).ready(() => {
-
   $('#tweet-text').on('input', function() {
-
     const textArea = $(this);
-
     const length = textArea.val().length;
     const remaining = 140 - length;
     const form = textArea.closest('form');
@@ -15,5 +12,4 @@ $(document).ready(() => {
       counter.removeClass('warning');
     }
   });
-
 });
