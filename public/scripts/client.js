@@ -4,34 +4,34 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(() => {
-  
+
   addEventListener('submit', (event) => {
     event.preventDefault();
-    const text =  $('#tweet-text');
-        
+    const text = $('#tweet-text');
+
     if (text.val().length > 140) {
       showError("Your tweet is too long! Please reconsider!");
-      return; 
-    }
-    
-    if (text.val().length <= 0 ) {
-      showError("Your tweet is missing! Try again!");
-      return; 
+      return;
     }
 
-    const data = $("#new-tweet-form").serialize() 
+    if (text.val().length <= 0) {
+      showError("Your tweet is missing! Try again!");
+      return;
+    }
+
+    const data = $("#new-tweet-form").serialize();
 
     $.post('/tweets', data)
-    .then (function () {
-      $('#tweet-text').val('');
-      loadTweets();
-    })
-    .catch((error) => {
-      showError("error fetching tweets.", error)
-    })
-    return; 
-    
-  })
+      .then(function() {
+        $('#tweet-text').val('');
+        loadTweets();
+      })
+      .catch((error) => {
+        showError("error fetching tweets.", error);
+      });
+    return;
+
+  });
 
   loadTweets();
 
@@ -39,7 +39,7 @@ $(document).ready(() => {
     const errorPrinter = $('#error-printer');
     errorPrinter.text(errorMessage);
     errorPrinter.slideDown();
-    setTimeout(() => {errorPrinter.slideUp()}, 5000)
+    setTimeout(() => { errorPrinter.slideUp(); }, 5000);
   }
 
 });
@@ -50,26 +50,26 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-const loadTweets = function(){
+const loadTweets = function() {
 
   $.get('/tweets')
-  .then((data) => {
-    renderTweets(data);
-  })
-  .catch((error) => {
-    alert("error getting tweets.", error)
-  })
-  return; 
-}
+    .then((data) => {
+      renderTweets(data);
+    })
+    .catch((error) => {
+      alert("error getting tweets.", error);
+    });
+  return;
+};
 
 const renderTweets = function(tweets) {
   const allTweets = $('.all-tweets');
   $('.counter').val(140);
   tweets.forEach(thistweet => {
-    const tweet = createTweetElement(thistweet)
-    allTweets.prepend(tweet)
+    const tweet = createTweetElement(thistweet);
+    allTweets.prepend(tweet);
   });
-}
+};
 
 const createTweetElement = function(tweet) {
   const ago = timeago.format(tweet.created_at);
@@ -94,7 +94,7 @@ const createTweetElement = function(tweet) {
     </footer>
   </article>`;
 
-  return $tweet
+  return $tweet;
 };
 // renderTweets(data)
 

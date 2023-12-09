@@ -1,7 +1,7 @@
 nav {
   height: 120px;
   position: fixed;
-  width: 100% ;
+  width: 100%;
   padding: 1.5em;
   border-bottom: #19005e8d;
   border-bottom-left-radius: 25px;
@@ -11,9 +11,11 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-#tweeter-title{
+
+#tweeter-title {
   font-family: Bungee;
 }
+
 .tweet {
   display: flex;
   flex-direction: column;
