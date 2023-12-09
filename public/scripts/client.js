@@ -39,6 +39,7 @@ $(document).ready(() => {
     const errorPrinter = $('#error-printer');
     errorPrinter.text(errorMessage);
     errorPrinter.slideDown();
+    setTimeout(() => {errorPrinter.slideUp()}, 5000)
   }
 
 });

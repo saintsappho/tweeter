@@ -2,7 +2,9 @@
   padding-top: 140px;
   height: 520px;
   width: 100% ;
-  
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   color: rgb(255, 255, 255)000;
   font-family: 'Source Sans 3', sans-serif;
   display: flex;
@@ -11,4 +13,5 @@
   background-color: #888888;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   }
+  
   

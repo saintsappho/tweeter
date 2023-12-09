@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -46,34 +47,31 @@
       </div>
     </nav>
     <!-- Page-specific (main) content here -->
-    <header id="page-header">
-      <div>
-        <img src="/images/profile-hex.png">
-      </div>
-      <br/>
-      <div>
-        <h2>Robin Fleur</h2>
-      </div>
-    </header>
-    <main class="container">
-      <section class="new-tweet">
-        <div id="error-printer">
-          
+    <section id="page-content">
+      <header id="page-header">
+        <div>
+          <img id="self-profile-pic" src="/images/profile-hex.png">
         </div>
-        <form id="new-tweet-form">
-          <label for="tweet-text">What are you humming about?</label>
-          <br/>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div class="input-reactions">
-            
-            <button type="submit" value="tweet">tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <section class="all-tweets">
-
-      </section>
-    </main>
+        <br/>
+        <div class="user-info">
+          <h2>Robin Fleur</h2>
+        </div>
+      </header>
+      <main class="container">
+        <section class="new-tweet">
+          <div id="error-printer"></div>
+          <form id="new-tweet-form">
+            <label for="tweet-text">What are you humming about?</label>
+            <br/>
+            <textarea name="text" id="tweet-text"></textarea>
+            <div class="input-reactions">
+              <button type="submit" value="tweet">tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <section class="all-tweets"> </section>
+      </main>
+    </section>
   </body>
 </html>
