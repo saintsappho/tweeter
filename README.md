@@ -12,41 +12,17 @@ This repository is the starter code for the project: Students will fork and clon
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
+## Reactive CSS Examples
+![full size window version of tweeter](tweeter-desktop.png)
+![ipad-pro size window version of tweeter](tweeter-ipad-pro.png)
+![minimum width window version of tweeter](tweeter-narrow.png)
+![iphone-14 window version of tweeter](tweeter-iphone-14.png)
+
 ## Dependencies
 
 - Express
 - Node 5.10.x or above
+- body-parser 1.15.2
+- chance 1.0.2
+- md5 2.1.0
 
-
-### You will have to register to make an account. This will also sign you in 
-### and redirect you to the "home" page at http://localhost:8080/urls 
-
-### !["Screenshot of URLS page"](https://github.com/saintsappho/-tinyApp/tree/master/docs/empty_index.png)
-
-### Although no links are visible, This does not prevent you from visiting  
-### links in the database via longURL or the shortened URL. Please try to 
-### visit the following link.
-### http://localhost:8080/u/b2xVn2
-
-### Now that you are logged in and staring at an empty index, please select 
-### "Create New URL" from the nav bar. 
-### You should see a simple text input box. Please enter your full URL, 
-### including http:// or https:// as needed. 
-
-### !["Screenshot of new URL page"](https://github.com/saintsappho/-tinyApp/tree/master/docs/create_new.png)
-
-### The tinyUrl will be randomly generated and assigned to your URL, and you 
-### will be redirected to the URLS homepage, where your new URLs will be on 
-### display. You and only you will be able to see and edit them while logged ##in.
-
-### !["Screenshot of updated Index page"](https://github.com/saintsappho/-tinyApp/tree/master/docs/updated_index.png)
-
-### !["Screenshot of edit page for our very sleepy URL"](https://github.com/saintsappho/-tinyApp/tree/master/docs/edit_URL.png)
-###
-### Please play around with logging out and trying to cheat the system. 
-### I believe i have plugged most of the holes. i am quite proud of this app. 
-### 
-###
-###
-# Robin Out. 
-##### 2:47 am, december first, 2023.
