@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+This repository a completed version of the project: Students like me forked and cloned this repository, then built upon it to practice our HTML, CSS, JS, jQuery and AJAX front-end skills, and our Node, Express back-end skills.
 
 ## How To Play
 
@@ -13,10 +13,10 @@ This repository is the starter code for the project: Students will fork and clon
 4. Go to <http://localhost:8080/> in your browser.
 
 ## Reactive CSS Examples
-![full size window version of tweeter](tweeter-desktop.png)
-![ipad-pro size window version of tweeter](tweeter-ipad-pro.png)
-![minimum width window version of tweeter](tweeter-narrow.png)
-![iphone-14 window version of tweeter](tweeter-iphone-14.png)
+![screenshot of full size window version of tweeter](tweeter-desktop.png)
+![screenshot of ipad-pro size window version of tweeter](tweeter-ipad-pro.png)
+![screenshot of minimum width window version of tweeter](tweeter-narrow.png)
+![screenshot of iphone-14 window version of tweeter](tweeter-iphone-14.png)
 
 ## Dependencies
 
