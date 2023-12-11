@@ -87,6 +87,9 @@ const loadTweets = function() {
 const renderTweets = function(tweets) {
   const allTweets = $('.all-tweets');
   $('.counter').val(140);
+
+  allTweets.empty(); // ensure no duplication of prior tweets. 
+
   tweets.forEach(thistweet => {
     const tweet = createTweetElement(thistweet);
     allTweets.prepend(tweet);
