@@ -51,12 +51,12 @@
     <span id="tweeter-title">tweeter</span>
     <div class="tweet">
       <span><strong>Write</strong> a new tweet </span>
-      <i class="fa-solid fa-angles-down"></i>
+      <i class="fa-solid fa-angles-down fa-beat-fade" style="color: whitesmoke;"></i>
     </div>
   </nav>
   <!-- Page-specific (main) content here -->
   <section id="page-content">
-    <header id="page-header">
+    <header id="page-header">  <!-- user-specific content here -->
       <div>
         <img id="self-profile-pic" src="/images/profile-hex.png">
       </div>
@@ -67,8 +67,8 @@
     </header>
     <main class="container">
       <section class="new-tweet">
-        <div id="error-printer"></div>
-        <form id="new-tweet-form">
+        <div id="error-printer"></div>  <!-- error rolldown will insert here -->
+        <form id="new-tweet-form"> <!-- new tweetbox is here -->
           <label for="tweet-text">What are you humming about?</label>
           <br />
           <textarea name="text" id="tweet-text"></textarea>
@@ -78,7 +78,7 @@
           </div>
         </form>
       </section>
-      <section class="all-tweets"> </section>
+      <section class="all-tweets"> </section> <!-- all past tweets here -->
     </main>
   </section>
 </body>

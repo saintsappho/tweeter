@@ -14,8 +14,8 @@ html {
 }
 
 /*
- * Global layout stuff
- */
+* Global layout stuff
+*/
 
 body {
   color: #ffffff;
@@ -25,46 +25,20 @@ body {
   margin-right: auto;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
-
 }
 
-/* #page-header {
-  padding-top: 140px;
-  height: 520px;
-  width: 100% ;
-  
-  color: rgb(255, 255, 255)000;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  min-width: 300px;
+  font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #888888;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  }
+}
 
-  nav {
-    height: 120px;
-    position: fixed;
-    width: 100% ;
-    padding: 1.5em;
-    border-bottom: #19005e8d;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: #252525;
-    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #tweeter-title{
-    font-family: Bungee;
-  }
-
-  .tweet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
+/*
+ * new tweet box
+ */
 
 .new-tweet {
   margin-left: auto;
@@ -79,19 +53,8 @@ body {
   box-shadow: 5px 5px #252525
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  min-width: 300px;
-  font-size: 24px;
-  font-family: 'Source Sans 3', sans-serif;
-
-}
-
 .new-tweet textarea {
   border: none;
-
   color: whitesmoke;
   border-bottom: 2px solid black;
   background-color: transparent;
@@ -114,6 +77,25 @@ body {
   color: #252525
 }
 
+.input-reactions {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px 10px;
+}
+
+.counter {
+  font-family: Bungee;
+  font-size: medium;
+}
+
+.warning {
+  color: rgb(131, 0, 0);
+}
+
+/*
+ * error printer rolldown 
+ */
+
 #error-printer {
   display: none;
   margin: 5px -40px;
@@ -126,15 +108,13 @@ body {
   color: whitesmoke;
 }
 
+/*
+ * prior tweets
+ */
+
 .all-tweets {
   width: 100%;
   border-radius: 10px;
-}
-
-.input-reactions {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 10px 10px;
 }
 
 .tweet-box {
@@ -183,7 +163,6 @@ body {
   font-size: medium;
 }
 
-
 .tweet-box footer .reactions .reaction {
   margin: 3px;
 }
@@ -191,7 +170,6 @@ body {
 .tweet-box footer .reactions .reaction:hover {
   color: cornflowerblue;
   text-shadow: 1px 1px #313131;
-
 }
 
 .tweet-box span {
@@ -221,14 +199,6 @@ body {
   font-size: medium;
 }
 
-.counter {
-  font-family: Bungee;
-  font-size: medium;
-}
-
-.warning {
-  color: rgb(131, 0, 0);
-}
 
 /* tablet/desktop styles */
 
